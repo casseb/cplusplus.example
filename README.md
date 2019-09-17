@@ -147,3 +147,53 @@ int main() {
 Código presente também na pasta examples como [ponteiro.cpp](https://github.com/casseb/cplusplus.example/blob/master/examples/ponteiro.cpp).
 
 Para uma rápida execução e testes, é possível executar este código online diretamente pelo [Repl](https://repl.it/).
+
+## Exemplo de uso de Struct
+
+Abaixo código exemplo com detalhes de como uma struct funciona e suas principais características.
+
+~~~c++
+#include <iostream>
+
+using namespace std;
+
+/*
+Exemplo de Struct.
+Sua montagem pode ser feita fora o método main
+Esta chamada somente define um esqueleto, sem alocar nada em memória.
+Cada variável da struct é chamada de atributo.
+*/
+struct Triangulo {
+  int lado;
+  int altura;
+  int base;
+};
+
+int main ()
+{
+  /*
+  A variável triangulo é do tipo Triangulo.
+  neste momento sim é alocado o struct, que aloca 3 inteiros.
+  */
+  struct Triangulo triangulo;
+  
+  /*
+  Para utilizar o struct e seus atributos, deve ser chamado a variável triangulo, ponto e o atributo que quer manipular.
+  */
+  cout << "Digite o lado do triangulo" << "\n";
+  cin >> triangulo.lado;
+
+  cout << "Digite a altura do triangulo" << "\n";
+  cin >> triangulo.altura;
+
+  cout << "Digite a base do triangulo" << "\n";
+  cin >> triangulo.base;
+
+  cout << "O triangulo possui lado: " << triangulo.lado << ", altura: " << triangulo.altura << " e base: " << triangulo.base << "\n";
+
+  return 0;
+}
+~~~
+Código presente também na pasta examples como [struct.cpp](https://github.com/casseb/cplusplus.example/blob/master/examples/struct.cpp).
+
+Para uma rápida execução e testes, é possível executar este código online diretamente pelo [Repl](https://repl.it/).
