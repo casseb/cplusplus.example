@@ -96,3 +96,54 @@ int main ()
 Código presente também na pasta examples como [triangulo_simples_comentado.cpp](https://github.com/casseb/cplusplus.example/blob/master/examples/triangulo_simples_comentado.cpp).
 
 Para uma rápida execução e testes, é possível executar este código online diretamente pelo [Repl](https://repl.it/).
+
+## Exemplo de uso de ponteiros no C++
+
+Abaixo código exemplo com detalhes de como um ponteiro funciona e sua principal característica.
+
+~~~c++
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int variavel;
+  /*
+  Um ponteiro é declarado com um * na frente.
+  Um ponteiro salva o endereço da memória alocada e não o valor como na variável
+  */
+  int *ponteiro;
+
+  variavel = 10;
+  /*
+  Adicionar & na frente de uma variável retorna o endereço dela, e não o valor.
+  Ponteiro só recebe endereços e não valores.
+  Também é permitido apontar desta forma: *ponteiro = variavel;
+  */
+  ponteiro = &variavel;
+
+  /*
+  Imprimir na tela o ponteiro diretamente retorna o endereço que ele representa.
+  */
+  cout << "Endereço ponteiro: " << ponteiro << " \n";
+  /*
+  Imprimir na tela o *ponteiro retorna o valor que aquele endereço armazena.
+  */
+  cout << "Valor ponteiro: " << *ponteiro << " \n";
+
+  /*
+  Variável recebe um valor novo.
+  */
+  variavel = 20;
+
+  /*
+  O retorno desta impressão é 20, pois o conteúdo presente na memória mudou.
+  */
+  cout << "Novo valor ponteiro: " << *ponteiro << " \n";
+
+  return 0;
+}
+~~~
+Código presente também na pasta examples como [ponteiro.cpp](https://github.com/casseb/cplusplus.example/blob/master/examples/ponteiro.cpp).
+
+Para uma rápida execução e testes, é possível executar este código online diretamente pelo [Repl](https://repl.it/).
