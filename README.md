@@ -197,3 +197,51 @@ int main ()
 Código presente também na pasta examples como [struct.cpp](https://github.com/casseb/cplusplus.example/blob/master/examples/struct.cpp).
 
 Para uma rápida execução e testes, é possível executar este código online diretamente pelo [Repl](https://repl.it/).
+
+## Revisão e Exemplo de operações com ponteiros
+
+Abaixo código exemplo com detalhes de declarações de valores, ponteiros e uma visão clara de operações envolvendo valores e valores pelos ponteiros.
+
+~~~c++
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  
+  /*
+  Variável.
+  */
+  int variavel1 = 10;
+  cout << "Valor de variavel: " << variavel1 << "\n";
+
+  /*
+  Endereço de memória da variável.
+  */
+  cout << "Endereço da variavel: " << &variavel1 << "\n";
+
+  /*
+  Ponteiro.
+  */
+  int *ponteiro;
+  ponteiro = &variavel1;
+  cout << "Endereço vinculado ao ponteiro: " << ponteiro << "\n";
+  cout << "Valor vinculado ao endereço: " << *ponteiro << "\n";
+
+  /*
+  Operações com ponteiros.
+  Repare que só é possível calcular valor com valor, sendo necessário chamar o valor do ponteiro com *ponteiro.
+  As quatro chamadas abaixo funcionam mas a operação vai ficando mais clara a cada novo exemplo.
+  */
+  int variavel2 = 20;
+  cout << "Operação com ponteiros: " << variavel2**ponteiro << "\n";
+  cout << "Operação com ponteiros: " << (variavel2**ponteiro) << "\n";
+  cout << "Operação com ponteiros: " << (variavel2 * *ponteiro) << "\n";
+  cout << "Operação com ponteiros: " << (variavel2 * (*ponteiro)) << "\n";
+
+  return 0;
+}
+~~~
+Código presente também na pasta examples como [operacoes.cpp](https://github.com/casseb/cplusplus.example/blob/master/examples/operacoes.cpp).
+
+Para uma rápida execução e testes, é possível executar este código online diretamente pelo [Repl](https://repl.it/).
