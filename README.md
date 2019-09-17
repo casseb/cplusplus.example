@@ -32,6 +32,6 @@ main ()
   return 0;
 }
 ~~~
-Código presente também na pasta examples com o nome "triangulo_simples.cpp".
+Código presente também na pasta examples como [triangulo_simples.cpp](https://github.com/casseb/cplusplus.example/blob/master/examples/triangulo_simples.cpp).
 
-Para uma rápida execução e testes, é possível acessar este código online diretamente pelo [Repl](https://repl.it/repls/BriskRecklessDrupal).
+Para uma rápida execução e testes, é possível executar este código online diretamente pelo [Repl](https://repl.it/).
