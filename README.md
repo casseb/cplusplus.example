@@ -27,11 +27,11 @@ main ()
   cout << "Digite a base do triangulo" << "\n";
   cin >> base;
 
-  cout << "O triangulo possui lado: " << lado << ", altura: " << altura << " e base:" << base << "\n";
+  cout << "O triangulo possui lado: " << lado << ", altura: " << altura << " e base: " << base << "\n";
 
   return 0;
 }
 ~~~
 Código presente também na pasta examples com o nome "triangulo_simples.cpp".
 
-Para uma rápida execução e testes, é possível acesse o [Online GDB](https://www.onlinegdb.com/online_c++_compiler) e cole o código na íntegra.
+Para uma rápida execução e testes, é possível acessar este código online diretamente pelo [Repl](https://repl.it/repls/BriskRecklessDrupal).
